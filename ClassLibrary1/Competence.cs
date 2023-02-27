@@ -1,5 +1,5 @@
 //https://docs.google.com/document/d/1P3kBxfRo420TN9bADSITAmdnIWRJUrNsCpj2ENN1YQs/edit
-namespace ClassesLibrary;
+namespace ClassLibrary1;
 
 public class Competence
 {
