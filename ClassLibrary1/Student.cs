@@ -1,15 +1,27 @@
 ﻿//https://docs.google.com/document/d/1FrtPd2tz85cDVhZCYXqL0wrByPjNbd6kUbjXzOzfLPc/edit - задание
-namespace ClassesLibrary1
+namespace ClassLibrary1
 {
     public class Student
     {
-        private string? name; // имя
-        private string? s_name; // фамилия
-        private string? p_name; // отчество
+        private readonly string? name; // имя
+        public string? Name { get => name; }
+        
+        private readonly string? s_name; // фамилия
+        
+        public string? S_name { get => s_name; }
+        
+        private readonly string? p_name; // отчество
+        
+        public string? P_name { get => p_name; }
+        
         private readonly Group group;
+        
         public Group Group { get => group; }
-        private DateTime date; // дата рождения
-        Student(string name, string s_name, string p_name, Group group, DateTime? date) // конструктор со всей фигней
+        
+        private readonly DateTime date; // дата рождения
+
+        public DateTime? Date { get => date; }
+        public Student(string name, string s_name, string p_name, Group group, DateTime? date) // конструктор со всей фигней
         {
             this.name = name;
             this.s_name = s_name;
@@ -17,5 +29,8 @@ namespace ClassesLibrary1
             this.group = group;
             this.date = date ?? DateTime.Today;
         }
+
+        
+        
     }
 }
