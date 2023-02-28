@@ -81,7 +81,7 @@ void PrintStudent(Student student)
     Console.WriteLine(student.Name); // имя
     Console.WriteLine(student.S_name); // фамилия
     Console.WriteLine(student.P_name); // отчество
-    PrintGroup(student.Group); // ссылка на группу
+    //PrintGroup(student.Group); // ссылка на группу
 }
 
 void PrintDiscipline(Discipline discipline)
