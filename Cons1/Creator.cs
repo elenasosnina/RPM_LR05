@@ -11,8 +11,4 @@ internal class ClassCreator
     {
         throw new NotImplementedException();
     }
-    public static Lesson Lesson()
-    { 
-        
-    }
 }

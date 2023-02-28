@@ -23,8 +23,6 @@ while (true)
 }
 
 Lesson CreateClassLesson()
-{
-    Lesson CreateClassLesson()
     {
         return new Lesson(
             DateTime.Now,
@@ -34,7 +32,6 @@ Lesson CreateClassLesson()
             CreateClassDiscipline(),
             CreateClassAuditory());
     }
-}
 
 
 Auditory CreateClassAuditory()
