@@ -3,9 +3,9 @@ namespace ClassLibrary1;
 
 public class Competence
 {
-	public int? code;
-	public string? content;
-	public readonly Speciality speciality;
+	private int? code;
+	private string? content;
+	private readonly Speciality speciality;
 	public Speciality speciality { get => speciality; }
 	public Competence(int? code , string? content , Speciality speciality)
 	{
