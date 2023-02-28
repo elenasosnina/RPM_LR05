@@ -7,9 +7,14 @@ while (true)
         Console.WriteLine("Какой класс Вы хотите создать?");
         switch (Console.ReadLine())
         {
-            case "Lesson": PrintLesson(CreateClassLesson()); break;
+            case "Lesson": 
+                PrintLesson(CreateClassLesson());
+                break;
             case "Student":
                 UI.Print(ClassCreator.Student());
+                break;
+            case "Auditory":
+                PrintAuditory(CreateClassAuditory());
                 break;
             default:
                 Console.WriteLine("Такого класса не существует");
@@ -91,10 +96,19 @@ void PrintDiscipline(Discipline discipline)
 
 void PrintAuditory(Auditory auditory)
 {
-    throw new NotImplementedException();
+    Console.WriteLine(auditory.Name);// Название
+    PrintEmployee(auditory.Employee); // Ссылка на ответственного сотрудника
+    Console.WriteLine(auditory.Mest); // Кол-во посадочных мест
+    Console.WriteLine(auditory.Window); // Кол-во окон
+    PrintEquipmentr(auditory.Equipment); ; // ссылка на группу
 }
 
 void PrintTypeLesson(TypeLesson typeLesson)
+{
+    throw new NotImplementedException();
+}
+
+void PrintEmployee(Employee employee)
 {
     throw new NotImplementedException();
 }
