@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ClassLibrary;
+namespace ClassLibrary1;
 
 public class Journal
 {
