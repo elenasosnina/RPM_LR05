@@ -1,6 +1,4 @@
 ﻿// Задание - " https://docs.google.com/document/d/1pDw7bbBJDmeqT8VVwp68BSOF_4yd9cNb9xpH_q2KW0E/edit "
-using System;
-using System.Runtime.CompilerServices;
 namespace ClassLibrary1
 {
     public class Speciality
