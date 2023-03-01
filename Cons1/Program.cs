@@ -14,7 +14,7 @@ while (true)
                 UI.Print(ClassCreator.Student());
                 break;
             case "Auditory":
-                PrintAuditory(CreateClassAuditory());
+                UI.Print(ClassCreator.Auditory());
                 break;
             default:
                 Console.WriteLine("Такого класса не существует");
@@ -59,6 +59,11 @@ Equipment CreateClassEquipment()
     throw new NotImplementedException();
 }
 
+Equipment CreateClassEmployee()
+{
+    throw new NotImplementedException();
+}
+
 Pair CreateClassPair()
 {
     throw new NotImplementedException(); //trycatch отлов исключений
@@ -77,30 +82,13 @@ void PrintLesson(Lesson lesson)
     PrintPair(lesson.Pair);
     PrintEquipmentr(lesson.Equipment);
     PrintTypeLesson(lesson.TypeLesson);
-    PrintAuditory(lesson.Auditory);
+    UI.Print(ClassCreator.Auditory());
     PrintDiscipline(lesson.Discipline);
-}
-void PrintStudent(Student student)
-{
-    Console.WriteLine(student.Date);// DR
-    Console.WriteLine(student.Name); // имя
-    Console.WriteLine(student.S_name); // фамилия
-    Console.WriteLine(student.P_name); // отчество
-    PrintGroup(student.Group); // ссылка на группу
 }
 
 void PrintDiscipline(Discipline discipline)
 {
     throw new NotImplementedException();
-}
-
-void PrintAuditory(Auditory auditory)
-{
-    Console.WriteLine(auditory.Name);// Название
-    PrintEmployee(auditory.Employee); // Ссылка на ответственного сотрудника
-    Console.WriteLine(auditory.Mest); // Кол-во посадочных мест
-    Console.WriteLine(auditory.Window); // Кол-во окон
-    PrintEquipmentr(auditory.Equipment); ; // ссылка на группу
 }
 
 void PrintTypeLesson(TypeLesson typeLesson)

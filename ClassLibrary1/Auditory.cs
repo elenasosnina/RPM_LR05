@@ -16,7 +16,7 @@
 
         private readonly Equipment equipment; // Ссылка на оборудование
         public Equipment Equipment { get => equipment; }
-        Auditory(string name, Employee employee, int mest, int window, Equipment equipment) // конструктор 
+        public Auditory(string name, Employee employee, int mest, int window, Equipment equipment) // конструктор 
         {
             this.name = name;
             this.employee = employee;

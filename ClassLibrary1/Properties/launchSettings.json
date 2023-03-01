@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "ClassLibrary1": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\user\\Source\\Repos\\RPM_LR0005\\Cons1\\Cons1.csproj"
+    },
+    "Профиль 1": {
+      "commandName": "Executable"
+    }
+  }
+}
