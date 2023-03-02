@@ -46,6 +46,31 @@ internal class ClassCreator
 
     public static Group Group()
     {
+        Console.Write("Введите название группы: ");
+        string name = Console.ReadLine() ?? "";
+        Console.Write("Введите сокращённое название группы: ");
+        string sokr = Console.ReadLine() ?? "";
+        Console.Write("Введите численность группы: ");
+        string chisl = Console.ReadLine()?? "25";
+        Console.Write("Введите год поступления группы: ");
+        string? y = Console.ReadLine();
+        int year;
+        if (y == string.Empty) year = DateTime.Now.Year;
+        else year = int.Parse(y);
+
+        
+
+        return new Group(name, sokr, chisl, year, Speciality(), ClassTeacher());
+
+    }
+
+    public static ClassTeacher ClassTeacher()
+    {
+        return null;
+    }
+
+    public static Speciality Speciality()
+    {
         return null;
     }
     public static Employee Employee()

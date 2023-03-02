@@ -28,7 +28,12 @@ internal static class UI
 
     public static void Print(Group group)
     {
-        Console.WriteLine(group);
+        Console.WriteLine(group.Name);
+        Console.WriteLine(group.Sokr);
+        Console.WriteLine(group.Chisl);
+        Console.WriteLine(group.Year);
+        Print(group.ClassTeacher);
+        Print(group.Speciality);
     }
 
     public static void Print(Employee employee)
@@ -39,6 +44,15 @@ internal static class UI
     public static void Print(Equipment equipment)
     {
         Console.WriteLine(equipment);
+    }
+
+    public static void Print(Speciality speciality)
+    {
+        Console.WriteLine(speciality);
+    }
+    public static void Print(ClassTeacher classTeacher)
+    {
+        Console.WriteLine(classTeacher);
     }
 }
 
