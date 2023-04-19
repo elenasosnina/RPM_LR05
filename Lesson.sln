@@ -1,9 +1,9 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson", "Lesson\Lesson.csproj", "{02B7734B-7B44-48EE-8489-D324A549D413}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cons1", "Cons1\Cons1.csproj", "{02B7734B-7B44-48EE-8489-D324A549D413}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{425027CE-CBB8-41B2-9E24-DEB7151F227C}"
 EndProject
